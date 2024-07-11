@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.glowCursor {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.4);
+  /* background: -webkit-radial-gradient(33% 49%, circle, rgba(255,255,255,1) 0, rgba(43,116,165,1) 57%, rgba(5,57,91,1) 100%);
+  background: -moz-radial-gradient(33% 49%, circle, rgba(255,255,255,1) 0, rgba(43,116,165,1) 57%, rgba(5,57,91,1) 100%);
+  background: radial-gradient(circle at 33% 49%, rgba(255,255,255,1) 0, rgba(43,116,165,1) 57%, rgba(5,57,91,1) 100%); */
+  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5); */
+  box-shadow: 0 0 80px rgba(0, 0, 0, 1), 0 0 100px rgba(0, 0, 0, 0.8),
+    0 0 120px rgba(0, 0, 0, 0.8);
+  transform: translate(-50%, -50%); /* Центровать курсор */
+  transition: 0.1s ease, box-shadow 0.2s ease;
+}
+
+.glowCursorWhite {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.472);
+  /* background: -webkit-radial-gradient(33% 49%, circle, rgba(255,255,255,1) 0, rgba(43,116,165,1) 57%, rgba(5,57,91,1) 100%);
+  background: -moz-radial-gradient(33% 49%, circle, rgba(255,255,255,1) 0, rgba(43,116,165,1) 57%, rgba(5,57,91,1) 100%);
+  background: radial-gradient(circle at 33% 49%, rgba(255,255,255,1) 0, rgba(43,116,165,1) 57%, rgba(5,57,91,1) 100%); */
+  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5); */
+  box-shadow: 0 0 80px rgba(255, 255, 255, 1),
+    0 0 100px rgba(255, 255, 255, 0.8), 0 0 120px rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -50%); /* Центровать курсор */
+  transition: 0.1s ease, box-shadow 0.2s ease;
+}
